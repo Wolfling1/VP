@@ -169,10 +169,10 @@ export default (editedMessageArray, deletedMessageArray) => instead("dispatch", 
 
 			const timeRelative = `<t:${Math.abs(Math.round(now / 1000))}:R>`
 
-			newMessageContent += `  (${timeRelative}) ${Edited}${event?.message?.content ?? ""}`;
+			newMessageContent += ` (${timeRelative}) ${Edited}${event?.message?.content ?? ""}`;
 		} 
 		else {
-			newMessageContent += `  ${Edited}${event?.message?.content ?? ""}`;
+			newMessageContent += ` ${Edited}${event?.message?.content ?? ""}`;
 		}
 
 
